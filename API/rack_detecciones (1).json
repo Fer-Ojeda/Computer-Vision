@@ -1,0 +1,272 @@
+{
+    "PLC NUTRALAT FORTE 1.5L1": {
+        "etiqueta": "PLC NUTRALAT FORTE 1.5L",
+        "coordenadas": {
+            "x1": 57,
+            "y1": 877,
+            "x2": 186,
+            "y2": 1125
+        }
+    },
+    "RUFFLES QUESO 185g1": {
+        "etiqueta": "RUFFLES QUESO 185g",
+        "coordenadas": {
+            "x1": 528,
+            "y1": 141,
+            "x2": 664,
+            "y2": 421
+        }
+    },
+    "ACEITE VEGETAL LA POSADA 800ML1": {
+        "etiqueta": "ACEITE VEGETAL LA POSADA 800ML",
+        "coordenadas": {
+            "x1": 243,
+            "y1": 572,
+            "x2": 339,
+            "y2": 835
+        }
+    },
+    "Chicharron de Cerdo Intenso Bitz 115g1": {
+        "etiqueta": "Chicharron de Cerdo Intenso Bitz 115g",
+        "coordenadas": {
+            "x1": 231,
+            "y1": 120,
+            "x2": 464,
+            "y2": 441
+        }
+    },
+    "Takis Blue 75g1": {
+        "etiqueta": "Takis Blue 75g",
+        "coordenadas": {
+            "x1": 869,
+            "y1": 196,
+            "x2": 1042,
+            "y2": 466
+        }
+    },
+    "Papas Chips Barcel 170g1": {
+        "etiqueta": "Papas Chips Barcel 170g",
+        "coordenadas": {
+            "x1": 642,
+            "y1": 129,
+            "x2": 885,
+            "y2": 470
+        }
+    },
+    "Chicharron de Cerdo Natural Bitz 120g1": {
+        "etiqueta": "Chicharron de Cerdo Natural Bitz 120g",
+        "coordenadas": {
+            "x1": 25,
+            "y1": 106,
+            "x2": 252,
+            "y2": 463
+        }
+    },
+    "Sabrosano Mantequilla 850ml1": {
+        "etiqueta": "Sabrosano Mantequilla 850ml",
+        "coordenadas": {
+            "x1": 475,
+            "y1": 554,
+            "x2": 589,
+            "y2": 842
+        }
+    },
+    "CHEETOS TORCIDITOS 240g1": {
+        "etiqueta": "CHEETOS TORCIDITOS 240g",
+        "coordenadas": {
+            "x1": 445,
+            "y1": 179,
+            "x2": 586,
+            "y2": 442
+        }
+    },
+    "La Lechera1": {
+        "etiqueta": "La Lechera",
+        "coordenadas": {
+            "x1": 313,
+            "y1": 960,
+            "x2": 377,
+            "y2": 1106
+        }
+    },
+    "Frijol La Sierra Chorizo 440g1": {
+        "etiqueta": "Frijol La Sierra Chorizo 440g",
+        "coordenadas": {
+            "x1": 578,
+            "y1": 614,
+            "x2": 729,
+            "y2": 803
+        }
+    },
+    "Aceite Comestible Nutrioli 850 ML1": {
+        "etiqueta": "Aceite Comestible Nutrioli 850 ML",
+        "coordenadas": {
+            "x1": 311,
+            "y1": 568,
+            "x2": 417,
+            "y2": 821
+        }
+    },
+    "Carnation Leche Evaporada1": {
+        "etiqueta": "Carnation Leche Evaporada",
+        "coordenadas": {
+            "x1": 376,
+            "y1": 932,
+            "x2": 466,
+            "y2": 1111
+        }
+    },
+    "Frijol Pinto La Posada 900grm1": {
+        "etiqueta": "Frijol Pinto La Posada 900grm",
+        "coordenadas": {
+            "x1": 754,
+            "y1": 654,
+            "x2": 1017,
+            "y2": 838
+        }
+    },
+    "Arroz La Posada 900gr1": {
+        "etiqueta": "Arroz La Posada 900gr",
+        "coordenadas": {
+            "x1": 701,
+            "y1": 980,
+            "x2": 941,
+            "y2": 1139
+        }
+    },
+    "Papel Aluminio1": {
+        "etiqueta": "Papel Aluminio",
+        "coordenadas": {
+            "x1": 668,
+            "y1": 1269,
+            "x2": 981,
+            "y2": 1374
+        }
+    },
+    "Azucar Estandar La Posada 1kg1": {
+        "etiqueta": "Azucar Estandar La Posada 1kg",
+        "coordenadas": {
+            "x1": 480,
+            "y1": 933,
+            "x2": 722,
+            "y2": 1090
+        }
+    },
+    "PLC NUTRALAT FORTE 1L1": {
+        "etiqueta": "PLC NUTRALAT FORTE 1L",
+        "coordenadas": {
+            "x1": 168,
+            "y1": 890,
+            "x2": 310,
+            "y2": 1136
+        }
+    },
+    "Cafe Soluble Andatti Descafeinado 275g1": {
+        "etiqueta": "Cafe Soluble Andatti Descafeinado 275g",
+        "coordenadas": {
+            "x1": 14,
+            "y1": 586,
+            "x2": 155,
+            "y2": 832
+        }
+    },
+    "Cafe Soluble Andatti Clasico 275g1": {
+        "etiqueta": "Cafe Soluble Andatti Clasico 275g",
+        "coordenadas": {
+            "x1": 126,
+            "y1": 579,
+            "x2": 253,
+            "y2": 841
+        }
+    },
+    "ACEITE NUTRIOLI 400 ML1": {
+        "etiqueta": "ACEITE NUTRIOLI 400 ML",
+        "coordenadas": {
+            "x1": 404,
+            "y1": 623,
+            "x2": 491,
+            "y2": 841
+        }
+    },
+    "Frijol Pinto La Posada 900grm2": {
+        "etiqueta": "Frijol Pinto La Posada 900grm",
+        "coordenadas": {
+            "x1": 763,
+            "y1": 795,
+            "x2": 1015,
+            "y2": 869
+        }
+    },
+    "PLC NUTRALAT FORTE 1L2": {
+        "etiqueta": "PLC NUTRALAT FORTE 1L",
+        "coordenadas": {
+            "x1": 59,
+            "y1": 879,
+            "x2": 186,
+            "y2": 1126
+        }
+    },
+    "Azucar Estandar La Posada 1kg2": {
+        "etiqueta": "Azucar Estandar La Posada 1kg",
+        "coordenadas": {
+            "x1": 549,
+            "y1": 787,
+            "x2": 766,
+            "y2": 905
+        }
+    },
+    "ACEITE VEGETAL LA POSADA 800ML2": {
+        "etiqueta": "ACEITE VEGETAL LA POSADA 800ML",
+        "coordenadas": {
+            "x1": 290,
+            "y1": 544,
+            "x2": 346,
+            "y2": 632
+        }
+    },
+    "Arroz La Posada 900gr2": {
+        "etiqueta": "Arroz La Posada 900gr",
+        "coordenadas": {
+            "x1": 476,
+            "y1": 932,
+            "x2": 723,
+            "y2": 1108
+        }
+    },
+    "Aceite Comestible Nutrioli 850 ML2": {
+        "etiqueta": "Aceite Comestible Nutrioli 850 ML",
+        "coordenadas": {
+            "x1": 370,
+            "y1": 553,
+            "x2": 472,
+            "y2": 661
+        }
+    },
+    "Cafe Soluble Andatti Descafeinado 275g2": {
+        "etiqueta": "Cafe Soluble Andatti Descafeinado 275g",
+        "coordenadas": {
+            "x1": 125,
+            "y1": 588,
+            "x2": 261,
+            "y2": 835
+        }
+    },
+    "Papel Aluminio2": {
+        "etiqueta": "Papel Aluminio",
+        "coordenadas": {
+            "x1": 644,
+            "y1": 1225,
+            "x2": 922,
+            "y2": 1269
+        }
+    },
+    "Cafe Soluble Andatti Clasico 275g2": {
+        "etiqueta": "Cafe Soluble Andatti Clasico 275g",
+        "coordenadas": {
+            "x1": 10,
+            "y1": 581,
+            "x2": 122,
+            "y2": 842
+        }
+    }
+}

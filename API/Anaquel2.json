@@ -1,0 +1,223 @@
+{
+    "nombrePlanograma": "planograma Anaquel 2",
+
+    "filas": [
+        {
+            "idFila": "F5",
+            "numeroFila": 5,
+            "claseFila": "Papel Higiénico",
+            "Productos": [
+                {
+                    "CB": 7501036620956,
+                    "nombreProducto": "Papel Higienico Regio Rinde 4pz",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 20.00,
+                    "profundidad": 11.50
+                },
+                {
+                    "CB": 7506425645466,
+                    "nombreProducto": "Papel Higienico Suavel 4RL",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 19.60,
+                    "ancho": 21.80,
+                    "profundidad": 11.60
+                },
+                {
+                    "CB": 7506425622016,
+                    "nombreProducto": "Papel Higienico Cottonelle Elegance 4RL",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 22.80,
+                    "ancho": 22.20,
+                    "profundidad": 11.70
+                },
+                {
+                    "CB": 7506425600748,
+                    "nombreProducto": "Papel Higienico Petalo UltraJumbo 6 RL",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 19.50,
+                    "ancho": 26.00,
+                    "profundidad": 10.00
+                }
+            ]
+        },
+        {
+            "idFila": "F6",
+            "numeroFila": 6,
+            "claseFila": "Limpieza",
+            "Productos": [
+                {
+                    "CB": 7502271155968,
+                    "nombreProducto": "DETERGENTE AZALEA MULTIUSOS 900G",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 26.00,
+                    "ancho": 18.00,
+                    "profundidad": 5.00
+                },
+                {
+                    "CB": 7501954903698,
+                    "nombreProducto": "PAPEL HIGIENICO AZALEA 4RL",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 22.00,
+                    "profundidad": 11.00
+                },
+                {
+                    "CB": 7502271158891,
+                    "nombreProducto": "PAPEL HIGIENICO AZALEA JUMBO 4RL VAINILLA",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 22.00,
+                    "profundidad": 11.00
+                },
+                {
+                    "CB": 7502294220513,
+                    "nombreProducto": "PAPEL HIGIENICO AZALEA JUMBO 6RL",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 27.00,
+                    "profundidad": 19.00
+                }
+            ]
+        },
+        {
+            "idFila": "F7",
+            "numeroFila": 7,
+            "claseFila": "Bebés",
+            "Productos": [
+                {
+                    "CB": 7501035908246,
+                    "nombreProducto": "Aceite para bebe Baby Magic Mennen 100ml",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 12.50,
+                    "ancho": 5.20,
+                    "profundidad": 3.30
+                },
+                {
+                    "CB": 7506425651061,
+                    "nombreProducto": "Shampoo KleenBebe Manzanilla 200ml",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 18.20,
+                    "ancho": 7.40,
+                    "profundidad": 4.50
+                },
+                {
+                    "CB": 7501954902318,
+                    "nombreProducto": "Panales Tikytin 14pz T4",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 16.00,
+                    "profundidad": 9.00
+                },
+                {
+                    "CB": 7501954904664,
+                    "nombreProducto": "Panales Tikytin 14pz T5",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 20.00,
+                    "ancho": 16.00,
+                    "profundidad": 8.50
+                },
+                {
+                    "CB": 7502271154114,
+                    "nombreProducto": "Panales Tikytin 4pz T5",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 1,
+                    "alto": 26.00,
+                    "ancho": 11.00,
+                    "profundidad": 7.00
+                },
+                {
+                    "CB": 7501058623188,
+                    "nombreProducto": "NAN 1 OPTIPRO Formula Lactea",
+                    "posicionEnFila": 6,
+                    "cantidadDeFrentes": 1,
+                    "alto": 14.30,
+                    "ancho": 10.00,
+                    "profundidad": 10.00
+                },
+                {
+                    "CB": 7501058623195,
+                    "nombreProducto": "NAN 2 OPTIPRO Formula Lactea",
+                    "posicionEnFila": 7,
+                    "cantidadDeFrentes": 1,
+                    "alto": 14.30,
+                    "ancho": 10.00,
+                    "profundidad": 10.00
+                },
+                {
+                    "CB": 7501058623201,
+                    "nombreProducto": "NAN 3 OPTIPRO Formula Lactea",
+                    "posicionEnFila": 8,
+                    "cantidadDeFrentes": 1,
+                    "alto": 14.30,
+                    "ancho": 10.00,
+                    "profundidad": 10.00
+                }
+            ]
+        },
+        {
+            "idFila": "F8",
+            "numeroFila": 8,
+            "claseFila": "Bebidas",
+            "Productos": [
+                {
+                    "CB": 7501954905043,
+                    "nombreProducto": "AGUA BIOLEVE 1.5L",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 33.50,
+                    "ancho": 8.50,
+                    "profundidad": 8.50
+                },
+                {
+                    "CB": 7502271154695,
+                    "nombreProducto": "AGUA ALCALINA VITAWA 1.5L",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 2,
+                    "alto": 30.00,
+                    "ancho": 9.00,
+                    "profundidad": 9.00
+                },
+                {
+                    "CB": 7502271153674,
+                    "nombreProducto": "AGUA ALCALINA VITAWA 1L",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 2,
+                    "alto": 26.50,
+                    "ancho": 8.00,
+                    "profundidad": 8.00
+                },
+                {
+                    "CB": 7502271154718,
+                    "nombreProducto": "Agua Bioleve 1L 6pack",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 27.70,
+                    "ancho": 16.30,
+                    "profundidad": 24.40
+                },
+                {
+                    "CB": 7502271158273,
+                    "nombreProducto": "Agua Bioleve 500ml 8pack",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 1,
+                    "alto": 19.81,
+                    "ancho": 26.92,
+                    "profundidad": 13.46
+                }
+            ]
+        }
+    ]
+}

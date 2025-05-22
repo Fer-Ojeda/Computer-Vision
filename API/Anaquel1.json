@@ -1,0 +1,276 @@
+{
+    "nombrePlanograma": "planograma Anaquel 1",
+    "filas": [
+        {
+            "idFila": "F4",
+            "numeroFila": 1,
+            "claseFila": "Botanas",
+            "Productos": [
+                {
+                    "CB": 7502271154633,
+                    "nombreProducto": "Chicharron de Cerdo Natural Bitz 120g",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 30.00,
+                    "ancho": 16.00,
+                    "profundidad": 8.00
+                },
+                {
+                    "CB": 7502294221626,
+                    "nombreProducto": "Chicharron de Cerdo Intenso Bitz 115g",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 30.00,
+                    "ancho": 16.00,
+                    "profundidad": 8.00
+                },
+                {
+                    "CB": 7501011167728,
+                    "nombreProducto": "CHEETOS TORCIDITOS 240g",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 32.00,
+                    "ancho": 17.50,
+                    "profundidad": 7.00
+                },
+                {
+                    "CB": 7500478007981,
+                    "nombreProducto": "RUFFLES QUESO 185g",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 32.00,
+                    "ancho": 19.00,
+                    "profundidad": 8.00
+                },
+                {
+                    "CB": 7501000266203,
+                    "nombreProducto": "Papas Chips Barcel 170g",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 1,
+                    "alto": 31.00,
+                    "ancho": 19.00,
+                    "profundidad": 5.00
+                },
+                {
+                    "CB": 7500810018378,
+                    "nombreProducto": "Takis Blue 75g",
+                    "posicionEnFila": 6,
+                    "cantidadDeFrentes": 1,
+                    "alto": 21.00,
+                    "ancho": 12.50,
+                    "profundidad": 4.30
+                }
+            ]
+        },
+        {
+            "idFila": "F3",
+            "numeroFila": 2,
+            "claseFila": "Abarrotes 2",
+            "Productos":[
+                {
+                    "CB": 7502294221763,
+                    "nombreProducto": "Cafe Soluble Andatti Descafeinado 275g",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 21.20,
+                    "ancho": 8.80,
+                    "profundidad": 10.10
+                },
+                {
+                    "CB": 7502271155920,
+                    "nombreProducto": "Cafe Soluble Andatti Clasico 275g",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 21.00,
+                    "ancho": 9.80,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7502294221138,
+                    "nombreProducto": "ACEITE VEGETAL LA POSADA 800ML",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 23.80,
+                    "ancho": 7.58,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501039121610,
+                    "nombreProducto": "Aceite Comestible Nutrioli 850 ML",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 26.00,
+                    "ancho": 8.00,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501039121993,
+                    "nombreProducto": "ACEITE NUTRIOLI 400 ML",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 1,
+                    "alto": 21.30,
+                    "ancho": 6.80,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501039122099,
+                    "nombreProducto": "Sabrosano Mantequilla 850ml",
+                    "posicionEnFila": 6,
+                    "cantidadDeFrentes": 1,
+                    "alto": 25.80,
+                    "ancho": 7.20,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501052421391,
+                    "nombreProducto": "Frijol La Sierra Chorizo 440g",
+                    "posicionEnFila": 7,
+                    "cantidadDeFrentes": 1,
+                    "alto": 18.90,
+                    "ancho": 13.60,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501954908914,
+                    "nombreProducto": "Frijol Pinto La Posada 900grm",
+                    "posicionEnFila": 8,
+                    "cantidadDeFrentes": 1,
+                    "alto": 15.50,
+                    "ancho": 27.50,
+                    "profundidad": 3.50
+                }
+            ]
+        },
+        {
+            "idFila": "F2",
+            "numeroFila": 3,
+            "claseFila": "Abarrotes 1",
+            "Productos":[
+                {
+                    "CB":7502271153605,
+                    "nombreProducto": "PLC NUTRALAT FORTE 1.5L",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 24.50,
+                    "ancho": 9.00,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB":  7501954903292,
+                    "nombreProducto": "PLC NUTRALAT FORTE 1L",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes": 1,
+                    "alto": 16.70,
+                    "ancho": 10.00,
+                    "profundidad": 6.30
+                },
+                {
+                    "CB": 7501059278868,
+                    "nombreProducto": "La Lechera",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 14.50,
+                    "ancho": 7.50,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501058628831,
+                    "nombreProducto": "Carnation Leche Evaporada",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 16.60,
+                    "ancho": 7.40,
+                    "profundidad": 2
+                },
+                {
+                    "CB":  7502271156736,
+                    "nombreProducto": "Azucar Estandar La Posada 1kg",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 6,
+                    "alto": 3.50,
+                    "ancho": 22.50,
+                    "profundidad": 13.50
+                },
+                {
+                    "CB": 7501954907788,
+                    "nombreProducto": "Arroz La Posada 900gr",
+                    "posicionEnFila": 6,
+                    "cantidadDeFrentes": 1,
+                    "alto": 3.50,
+                    "ancho": 27.75,
+                    "profundidad": 15.50
+                }
+            ]
+        },
+        {
+            "idFila": "F1",
+            "numeroFila": 4,
+            "claseFila": "Atunes",
+            "Productos": [
+                {
+                    "CB": 7501045400846,
+                    "nombreProducto": "Atun Dolores 295gr",
+                    "posicionEnFila": 1,
+                    "cantidadDeFrentes": 1,
+                    "alto": 5.00,
+                    "ancho": 10.00,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501045403014,
+                    "nombreProducto": "Atun Dolores 130gr",
+                    "posicionEnFila": 2,
+                    "cantidadDeFrentes":1,
+                    "alto": 3.30,
+                    "ancho": 8.50,
+                    "profundidad": 8.50
+                },
+                {
+                    "CB": 7501045404271,
+                    "nombreProducto": "Atun Mazatun 130gr",
+                    "posicionEnFila": 3,
+                    "cantidadDeFrentes": 1,
+                    "alto": 3.39,
+                    "ancho": 8.50,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB":  7501045404066,
+                    "nombreProducto": "Atun Dolores Ensalada con Verduras 240gr",
+                    "posicionEnFila": 4,
+                    "cantidadDeFrentes": 1,
+                    "alto": 4.30,
+                    "ancho": 10.10,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501045403069,
+                    "nombreProducto": "Dolores SURFY 24/ 135 gr",
+                    "posicionEnFila": 5,
+                    "cantidadDeFrentes": 1,
+                    "alto": 4.30,
+                    "ancho": 10.10,
+                    "profundidad": 2.00
+                },
+                {
+                    "CB": 7501045402833,
+                    "nombreProducto": " Ensalada Atun Mazatun",
+                    "posicionEnFila": 6,
+                    "cantidadDeFrentes": 1,
+                    "alto": 4.70,
+                    "ancho": 8.90,
+                    "profundidad": 2
+                },
+                {
+                    "CB":  7501954903421,
+                    "nombreProducto": "Papel Aluminio",
+                    "posicionEnFila": 7,
+                    "cantidadDeFrentes": 1,
+                    "alto": 5.00,
+                    "ancho": 31.50,
+                    "profundidad": 5.00
+                }
+            ]
+        }
+    ]
+}

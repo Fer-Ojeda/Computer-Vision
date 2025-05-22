@@ -1,0 +1,209 @@
+{
+    "PapelHigienicoRegioRinde4pz1": {
+        "etiqueta": "Papel Higienico Regio Rinde 4pz",
+        "coordenadas": {
+            "x1": 30,
+            "y1": 800,
+            "x2": 177,
+            "y2": 960
+        }
+    },
+    "PapelHigienicoSuavel4RL1": {
+        "etiqueta": "Papel Higienico Suavel 4RL",
+        "coordenadas": {
+            "x1": 177,
+            "y1": 800,
+            "x2": 338,
+            "y2": 960
+        }
+    },
+    "PapelHigienicoCottonelleElegance4RL1": {
+        "etiqueta": "Papel Higienico Cottonelle Elegance 4RL",
+        "coordenadas": {
+            "x1": 338,
+            "y1": 800,
+            "x2": 502,
+            "y2": 960
+        }
+    },
+    "PapelHigienicoPetaloUltraJumbo6RL1": {
+        "etiqueta": "Papel Higienico Petalo UltraJumbo 6 RL",
+        "coordenadas": {
+            "x1": 502,
+            "y1": 800,
+            "x2": 695,
+            "y2": 960
+        }
+    },
+    "DETERGENTEAZALEAMULTIUSOS900G1": {
+        "etiqueta": "DETERGENTE AZALEA MULTIUSOS 900G",
+        "coordenadas": {
+            "x1": 30,
+            "y1": 579,
+            "x2": 164,
+            "y2": 731
+        }
+    },
+    "PAPELHIGIENICOAZALEA4RL1": {
+        "etiqueta": "PAPEL HIGIENICO AZALEA 4RL",
+        "coordenadas": {
+            "x1": 164,
+            "y1": 579,
+            "x2": 328,
+            "y2": 731
+        }
+    },
+    "PAPELHIGIENICOAZALEAJUMBO4RLVAINILLA1": {
+        "etiqueta": "PAPEL HIGIENICO AZALEA JUMBO 4RL VAINILLA",
+        "coordenadas": {
+            "x1": 328,
+            "y1": 579,
+            "x2": 493,
+            "y2": 731
+        }
+    },
+    "PAPELHIGIENICOAZALEAJUMBO6RL1": {
+        "etiqueta": "PAPEL HIGIENICO AZALEA JUMBO 6RL",
+        "coordenadas": {
+            "x1": 493,
+            "y1": 579,
+            "x2": 695,
+            "y2": 731
+        }
+    },
+    "AceiteparabebeBabyMagicMennen100ml1": {
+        "etiqueta": "Aceite para bebe Baby Magic Mennen 100ml",
+        "coordenadas": {
+            "x1": 30,
+            "y1": 355,
+            "x2": 70,
+            "y2": 505
+        }
+    },
+    "ShampooKleenBebeManzanilla200ml1": {
+        "etiqueta": "Shampoo KleenBebe Manzanilla 200ml",
+        "coordenadas": {
+            "x1": 70,
+            "y1": 355,
+            "x2": 127,
+            "y2": 505
+        }
+    },
+    "PanalesTikytin14pzT41": {
+        "etiqueta": "Panales Tikytin 14pz T4",
+        "coordenadas": {
+            "x1": 127,
+            "y1": 355,
+            "x2": 252,
+            "y2": 505
+        }
+    },
+    "PanalesTikytin14pzT51": {
+        "etiqueta": "Panales Tikytin 14pz T5",
+        "coordenadas": {
+            "x1": 252,
+            "y1": 355,
+            "x2": 376,
+            "y2": 505
+        }
+    },
+    "PanalesTikytin4pzT51": {
+        "etiqueta": "Panales Tikytin 4pz T5",
+        "coordenadas": {
+            "x1": 376,
+            "y1": 355,
+            "x2": 461,
+            "y2": 505
+        }
+    },
+    "NAN1OPTIPROFormulaLactea1": {
+        "etiqueta": "NAN 1 OPTIPRO Formula Lactea",
+        "coordenadas": {
+            "x1": 461,
+            "y1": 355,
+            "x2": 539,
+            "y2": 505
+        }
+    },
+    "NAN2OPTIPROFormulaLactea1": {
+        "etiqueta": "NAN 2 OPTIPRO Formula Lactea",
+        "coordenadas": {
+            "x1": 539,
+            "y1": 355,
+            "x2": 617,
+            "y2": 505
+        }
+    },
+    "NAN3OPTIPROFormulaLactea1": {
+        "etiqueta": "NAN 3 OPTIPRO Formula Lactea",
+        "coordenadas": {
+            "x1": 617,
+            "y1": 355,
+            "x2": 694,
+            "y2": 505
+        }
+    },
+    "AGUABIOLEVE1.5L1": {
+        "etiqueta": "AGUA BIOLEVE 1.5L",
+        "coordenadas": {
+            "x1": 30,
+            "y1": 78,
+            "x2": 95,
+            "y2": 282
+        }
+    },
+    "AGUAALCALINAVITAWA1.5L1": {
+        "etiqueta": "AGUA ALCALINA VITAWA 1.5L",
+        "coordenadas": {
+            "x1": 95,
+            "y1": 78,
+            "x2": 165,
+            "y2": 282
+        }
+    },
+    "AGUAALCALINAVITAWA1.5L2": {
+        "etiqueta": "AGUA ALCALINA VITAWA 1.5L",
+        "coordenadas": {
+            "x1": 165,
+            "y1": 78,
+            "x2": 235,
+            "y2": 282
+        }
+    },
+    "AGUAALCALINAVITAWA1L1": {
+        "etiqueta": "AGUA ALCALINA VITAWA 1L",
+        "coordenadas": {
+            "x1": 235,
+            "y1": 78,
+            "x2": 297,
+            "y2": 282
+        }
+    },
+    "AGUAALCALINAVITAWA1L2": {
+        "etiqueta": "AGUA ALCALINA VITAWA 1L",
+        "coordenadas": {
+            "x1": 297,
+            "y1": 78,
+            "x2": 359,
+            "y2": 282
+        }
+    },
+    "AguaBioleve1L6pack1": {
+        "etiqueta": "Agua Bioleve 1L 6pack",
+        "coordenadas": {
+            "x1": 359,
+            "y1": 78,
+            "x2": 486,
+            "y2": 282
+        }
+    },
+    "AguaBioleve500ml8pack1": {
+        "etiqueta": "Agua Bioleve 500ml 8pack",
+        "coordenadas": {
+            "x1": 486,
+            "y1": 78,
+            "x2": 695,
+            "y2": 282
+        }
+    }
+}
