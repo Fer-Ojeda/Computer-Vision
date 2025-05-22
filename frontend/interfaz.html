@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analizador Inteligente de Anaqueles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+</head>
+<body>
+  <header>
+    <div class="logo">💡 Analizador de Anaqueles</div>
+    <nav>
+      <button id="btnAyuda" class="nav-button">Ayuda</button>
+    </nav>
+  </header>
+
+  <main>
+   <!-- Sección 1: Selección de Anaquel -->
+<section id="seccionSeleccionAnaquel" class="active-section tarjeta">
+  <h2>Paso 1: Selecciona el Anaquel a Analizar</h2>
+  <div class="anaquel-options">
+    <button class="anaquel-button" data-anaquel="1">
+      <img src="icono-anaquel-1.png" alt="Icono Anaquel 1" class="anaquel-icon" /> 
+      <span>Anaquel 1</span>
+      <small>(Atunes, Abarrotes, Botanas)</small>
+    </button>
+    <button class="anaquel-button" data-anaquel="2">
+      <img src="icono-anaquel-2.png" alt="Icono Anaquel 2" class="anaquel-icon" />
+      <span>Anaquel 2</span>
+      <small>(Papel, Limpieza, Bebés, Bebidas)</small>
+    </button>
+  </div>
+</section>
+
+    <!-- Sección 2: Carga y Recorte de Imagen -->
+    <section id="seccionCargaImagen" class="tarjeta">
+      <div class="encabezado-seccion-con-regreso"> <!-- Contenedor para título y botón de regreso -->
+        <h2>Paso 2: Carga la Imagen del Anaquel <span id="anaquelSeleccionadoTitulo"></span></h2>
+        <button id="btnRegresarSeleccion" class="boton-secundario boton-regresar" style="display:none;">← Volver a Selección</button>
+      </div>
+      <p>Sube una foto clara y frontal del estado actual del anaquel.</p>
+      <input type="file" id="imageUpload" accept="image/*" class="file-input" />
+      <label for="imageUpload" class="boton-principal file-input-label">Seleccionar Imagen</label>
+
+      <div id="editorImagenContainer" style="display:none;">
+        <div id="imagenParaRecortarContainer">
+          <img id="imagenParaRecortar" src="#" alt="Imagen para recortar" />
+        </div>
+        <div class="crop-controls">
+          <button id="btnRecortar" class="boton-accion">Recortar y Procesar</button>
+          <button id="btnOmitirRecorte" class="boton-secundario">Procesar sin Recortar</button>
+          <button id="btnZoomInCrop" class="boton-icono" title="Acercar Recorte">+</button>
+          <button id="btnZoomOutCrop" class="boton-icono" title="Alejar Recorte">-</button>
+          <button id="btnResetCrop" class="boton-icono" title="Reiniciar Recorte">↩</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Procesamiento y Resultados -->
+    <section id="seccionResultados" class="tarjeta">
+        <div class="encabezado-seccion-con-regreso"> <!-- Contenedor para título y botón de regreso -->
+            <h2>Paso 3: Resultados del Análisis del Anaquel <span id="anaquelResultadosTitulo"></span></h2>
+            <button id="btnVolverInicioResultados" class="boton-secundario boton-regresar">← Volver al Inicio</button>
+        </div>
+      
+        <div id="loader" class="loader" style="display:none;">
+            <div class="spinner"></div>
+            <p>Analizando imagen, por favor espera...</p>
+            <small id="estadoProcesamientoBackend">Enviando imagen al servidor...</small>
+        </div>
+
+        <div id="areaResultados" style="display:none;">
+            <div class="resultados-layout">
+                <div id="contenedorImagenResultados">
+                    <img id="imagenResultados" src="#" alt="Imagen del anaquel con análisis">
+                </div>
+                <div id="listaInstrucciones">
+                    <h3>Instrucciones de Corrección:</h3>
+                    <ul id="instruccionesItems">
+                        <!-- Las instrucciones se generarán aquí -->
+                    </ul>
+                </div>
+            </div>
+            <div class="acciones-post-analisis">
+                <button id="btnNuevoAnalisis" class="boton-principal">Analizar Otro Anaquel</button>
+                <button id="btnExportarResultados" class="boton-accion">Exportar Resultados (PDF)</button>
+                <!-- El botón "Volver al inicio" se movió al encabezado de esta sección -->
+            </div>
+        </div>
+        <p id="mensajeErrorResultados" class="mensaje-error" style="display:none;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 TuNombre/Empresa - Sistema Inteligente de Anaqueles</p> <!-- Actualicé el año -->
+  </footer>
+
+  <!-- Modal Feedback -->
+  <div id="modalFeedback" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal" onclick="cerrarModalFeedback()">×</span>
+      <h3>Enviar Feedback sobre la Detección</h3>
+      <p><strong>Item:</strong> <span id="feedbackItemNombre"></span></p>
+      <input type="hidden" id="feedbackItemId" />
+      <form id="formFeedback">
+        <label for="tipoError">Tipo de Error:</label>
+        <select id="tipoError" name="tipoError">
+          <option value="mal_colocado_detectado">Mal Colocado (Detectado)</option>
+          <option value="faltante_no_detectado">Faltante (No Detectado)</option>
+          <option value="extra_detectado">Extra (Detectado Incorrectamente)</option>
+          <option value="etiqueta_incorrecta">Etiqueta Incorrecta</option>
+          <option value="coordenadas_imprecisas">Coordenadas Imprecisas</option>
+          <option value="otro">Otro</option>
+        </select>
+        <label for="comentarioFeedback">Comentario Adicional:</label>
+        <textarea id="comentarioFeedback" name="comentarioFeedback" rows="4"></textarea>
+        <button type="submit" class="boton-accion">Enviar Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Ayuda -->
+  <div id="modalAyuda" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar-modal" onclick="document.getElementById('modalAyuda').style.display='none'">×</span>
+      <h2>Guía Rápida</h2>
+      <ol>
+        <li><strong>Selecciona Anaquel:</strong> Elige el tipo de anaquel que vas a analizar.</li>
+        <li><strong>Carga Imagen:</strong> Sube una foto del anaquel. Recomendamos una foto frontal y bien iluminada.</li>
+        <li><strong>Recorta (Opcional):</strong> Ajusta el recuadro para seleccionar solo el área del anaquel de interés. Esto mejora la precisión.</li>
+        <li><strong>Procesa:</strong> El sistema analizará la imagen contra el planograma.</li>
+        <li><strong>Revisa Resultados:</strong> Se mostrará la imagen con las detecciones y una lista de acciones sugeridas.</li>
+        <li><strong>Feedback:</strong> Usa el botón 'Reportar Problema' (icono de bandera 🚩) al lado de cada instrucción para enviarnos tus comentarios.</li>
+      </ol>
+      <p>Para mejores resultados, asegúrate de que la imagen sea de buena calidad.</p>
+    </div>
+  </div>
+
+  <!-- Scripts necesarios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

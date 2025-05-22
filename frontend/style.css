@@ -1,0 +1,487 @@
+:root {
+    --color-primario: #3498db; /* Azul */
+    --color-secundario: #2ecc71; /* Verde */
+    --color-acento: #f39c12; /* Naranja */
+    --color-fondo: #ecf0f1; /* Gris claro */
+    --color-tarjeta: #ffffff;
+    --color-texto: #333333;
+    --color-texto-claro: #ffffff;
+    --sombra-tarjeta: 0 4px 8px rgba(0,0,0,0.1);
+    --radio-borde: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.nav-button {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.nav-button:hover {
+    background-color: #27ae60; /* Verde más oscuro */
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: none; /* Ocultas por defecto, JS las muestra */
+    width: 100%;
+    max-width: 900px; /* Ancho máximo para contenido */
+    margin-bottom: 2rem;
+}
+section.active-section {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.tarjeta {
+    background-color: var(--color-tarjeta);
+    padding: 2rem;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-tarjeta);
+}
+
+h2 {
+    color: var(--color-primario);
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-fondo);
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.anaquel-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Para pantallas pequeñas */
+}
+
+.anaquel-button {
+    background-color: var(--color-tarjeta);
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
+    padding: 1.5rem;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 45%; /* Dos por fila en pantallas grandes */
+    min-width: 280px; /* Para que no sea muy pequeño */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.anaquel-button:hover {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.anaquel-icon {
+    width: 80px; /* Aumenta el tamaño del placeholder */
+    height: 80px;
+    margin-bottom: 1rem; /* Más espacio */
+    opacity: 0.7;
+}
+.anaquel-button span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem; /* Espacio para el small */
+}
+.anaquel-button small {
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Gris para el texto secundario */
+}
+.anaquel-button:hover small {
+    color: var(--color-fondo); /* Color claro cuando el botón está en hover */
+}
+
+
+.file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.file-input-label {
+    margin-top: 1rem;
+    display: inline-block; /* Para que el padding funcione alrededor */
+}
+
+#editorImagenContainer {
+    margin-top: 1.5rem;
+    border: 1px dashed #ccc;
+    padding: 1rem;
+    border-radius: var(--radio-borde);
+}
+#imagenParaRecortarContainer {
+    max-width: 100%;
+    max-height: 500px; /* Limitar altura para el editor */
+    margin: 0 auto; /* Centrar imagen en su contenedor si es más pequeña */
+    overflow: hidden; /* Para el cropper */
+}
+#imagenParaRecortar {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Cropperjs maneja el tamaño */
+}
+
+.crop-controls {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.boton-principal, .boton-accion, .boton-secundario {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-weight: 500;
+}
+.boton-principal {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+.boton-principal:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+}
+.boton-accion {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+}
+.boton-accion:hover {
+    background-color: #27ae60; /* Verde más oscuro */
+}
+.boton-secundario {
+    background-color: #bdc3c7; /* Gris */
+    color: var(--color-texto);
+}
+.boton-secundario:hover {
+    background-color: #95a5a6; /* Gris más oscuro */
+}
+button:active {
+    transform: scale(0.98);
+}
+
+.boton-icono {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    color: var(--color-texto);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-icono:hover {
+    background-color: #dcdde1;
+}
+
+
+#loader {
+    text-align: center;
+    padding: 2rem;
+}
+.spinner {
+    border: 6px solid var(--color-fondo);
+    border-top: 6px solid var(--color-primario);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#estadoProcesamientoBackend {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.resultados-layout {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Para que se apile en pantallas pequeñas */
+}
+#contenedorImagenResultados {
+    flex: 1; /* Ocupa espacio disponible */
+    min-width: 300px; /* Evita que sea demasiado pequeño */
+    border: 1px solid #ddd;
+    border-radius: var(--radio-borde);
+    overflow: hidden; /* En caso de que la imagen sea más grande */
+}
+#imagenResultados {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radio-borde);
+}
+#listaInstrucciones {
+    flex: 1;
+    min-width: 300px;
+    max-height: 500px; /* Limitar altura y activar scroll */
+    overflow-y: auto;
+    padding-right: 10px; /* Espacio para el scrollbar */
+    border-left: 1px solid #eee; /* Separador visual */
+    padding-left: 1.5rem;
+}
+#listaInstrucciones h3 {
+    margin-top: 0;
+    color: var(--color-primario);
+}
+#instruccionesItems {
+    list-style-type: none;
+    padding: 0;
+}
+#instruccionesItems li {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: var(--radio-borde);
+    border: 1px solid #eee;
+    position: relative; /* Para posicionar el botón de feedback */
+}
+.instruccion-ok { background-color: #e8f5e9; border-left: 5px solid var(--color-secundario); } /* Verde claro */
+.instruccion-error { background-color: #ffebee; border-left: 5px solid #e53935; } /* Rojo claro */
+.instruccion-faltante { background-color: #fff3e0; border-left: 5px solid var(--color-acento); } /* Naranja claro */
+.instruccion-extra { background-color: #e3f2fd; border-left: 5px solid #1e88e5; } /* Azul claro */
+.instruccion-header { font-weight: bold; display: block; margin-bottom: 0.3rem; }
+.instruccion-detalle { font-size: 0.9rem; color: #555; }
+.instruccion-accion { font-weight: bold; color: var(--color-primario); display: block; margin-top:0.3rem;}
+
+.acciones-post-analisis {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mensaje-error {
+    color: #c0392b; /* Rojo */
+    background-color: #fadbd8;
+    border: 1px solid #f1948a;
+    padding: 1rem;
+    border-radius: var(--radio-borde);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Modal genérico */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    animation: fadeInModal 0.3s ease-out;
+}
+@keyframes fadeInModal { from { opacity: 0; } to { opacity: 1; } }
+
+.modal-contenido {
+    background-color: var(--color-tarjeta);
+    margin: 10% auto;
+    padding: 25px;
+    border: 1px solid #bbb;
+    width: 80%;
+    max-width: 600px;
+    border-radius: var(--radio-borde);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+       animation: slideInModal 0.3s ease-out;
+}
+@keyframes slideInModal { from { transform: translateY(-50px); } to { transform: translateY(0); } }
+
+.cerrar-modal {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cerrar-modal:hover, .cerrar-modal:focus {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+/* Formularios en Modales */
+#formFeedback label, #modalAyuda h2 {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+#formFeedback select, #formFeedback textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radio-borde);
+    box-sizing: border-box;
+    font-family: inherit;
+}
+#formFeedback button[type="submit"] {
+    width: 100%;
+}
+
+.btn-reportar-problema {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 1.2rem; /* Más grande para que sea más clickeable */
+    padding: 5px;
+    line-height: 1;
+}
+.btn-reportar-problema:hover {
+    color: var(--color-acento);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50; /* Azul oscuro/gris */
+    color: #bdc3c7; /* Gris claro */
+    font-size: 0.9rem;
+    margin-top: auto; /* Para pegar al fondo si el contenido es corto */
+}
+
+/* Para cropper.js - asegura que la imagen no crezca indefinidamente */
+.cropper-container {
+    direction: ltr;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    header .logo { font-size: 1.5rem; }
+    .nav-button { padding: 0.5rem 1rem; font-size: 0.9rem;}
+
+    .anaquel-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .anaquel-button {
+        width: 90%; /* Ocupar más ancho en pantallas pequeñas */
+    }
+    .resultados-layout {
+        flex-direction: column;
+    }
+    #listaInstrucciones {
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding-left: 0;
+        margin-top: 1.5rem;
+         max-height: 300px; /* menos altura en movil */
+    }
+    .modal-contenido {
+        width: 90%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    .modal-contenido h3, #modalAyuda h2 { font-size: 1.2rem; }
+}
+
+.encabezado-seccion-con-regreso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem; /* Espacio antes del contenido de la sección */
+}
+
+.encabezado-seccion-con-regreso h2 {
+    margin-bottom: 0; /* Quitar margen inferior del h2 si está en este flex container */
+    flex-grow: 1; /* Para que el título ocupe el espacio y el botón se alinee a la derecha */
+    text-align: left; /* O central si prefieres, pero left funciona bien con el botón a la derecha */
+}
+
+.boton-regresar {
+    /* Estilos específicos si quieres que se vea diferente o más pequeño */
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
